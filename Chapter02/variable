@@ -1,0 +1,11 @@
+#!/bin/sh
+
+myvar="HI there"
+echo $HOME
+echo $PATH
+echo $0
+echo $#
+echo $$
+
+
+exit 0

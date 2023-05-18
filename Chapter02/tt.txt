@@ -1,0 +1,15 @@
+a.out
+bill.c
+bill.o
+fred.c
+fred.o
+hello.c
+libfoo.a
+lib.h
+program
+program.c
+program.o
+tt.txt
+    PID TTY          TIME CMD
+  34328 pts/0    00:00:00 bash
+  38646 pts/0    00:00:00 ps
