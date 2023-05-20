@@ -15,3 +15,5 @@ int main(void)
 
 // gcc -I/home/jj/linux_pro/Beginning-Linux-Programming/Chapter02/lib.h hello.c -o hello
 //这一段是指定自己的头文件的路径，这样就可以在自己的头文件中使用<>来包含自己的头文件了。
+
+//鱼为什么会飞
