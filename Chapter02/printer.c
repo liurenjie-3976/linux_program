@@ -18,11 +18,13 @@ void printdir(char *dir,int depth){
         return;
     }
 
-    chdir(dir);
+    chdir(dir); //切换目录，如果存在那就返回一个0，不存在就返回-1。
 
     while ((entry = readdir(dp)) != NULL)
     {
         lstat(entry->d_name,&statbuf);
+        // lstat()函数接受一个字符串参数path，表示要获取信息的文件或目录路径，
+        // 同时接受一个指向struct stat结构体的指针statbuf，用于存储获取到的文件信息。
         if(S_ISDIR(statbuf.st_mode)){
             if(strcmp(".",entry->d_name) == 0 || strcmp("..",entry->d_name) == 0){
                 continue;
